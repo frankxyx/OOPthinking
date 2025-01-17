@@ -6,14 +6,14 @@
 // #include "particle.h" //yet to be created!
 
 class System {
-  public:
-    System();
-    int   particleNumber;
-    double noiseStrength;
-    // Box simulationBox;
-    // std::vector<Particle> particles;
+    public:
+        System(int particleNumber,double sideLength, double timeStep,double noiseStrength);
+        int   particleNumber;
+        double noiseStrength;
+        // Box simulationBox;
+        // std::vector<Particle> particles;
 
-    void updateRule();
+        void updateRule();
 };
 
 #endif
