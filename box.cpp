@@ -1,5 +1,8 @@
 #include "box.h"
 
+Box::Box(){
+
+}
 Box:: Box(double lx, double ly, double x0, double y0){
 
     this->setSides(lx,ly);
@@ -18,5 +21,5 @@ double Box::getSidex(){
     return this->sidex;
 }
 double Box::getSidey(){
-    return sidey;
+    return this->sidey;
 }

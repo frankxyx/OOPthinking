@@ -8,7 +8,6 @@ int main(){
     System model(N, L, dt, noise);
     std::cout<<"The system contains "<<model.particleNumber<<" particles."<<std::endl;
     std::cout<<"The system has noise "<<model.noiseStrength<<std::endl;
-
     model.updateRule();
     return 0;
 }
