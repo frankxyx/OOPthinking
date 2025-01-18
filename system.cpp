@@ -10,6 +10,7 @@ System::System(int particleNumber,double sideLength, double timeStep,double nois
     this->timeStep = timeStep;
     this->sideLength = sideLength;
 
+    this->simulationBox = Box(sideLength,sideLength,0,0);
 
     
 }
