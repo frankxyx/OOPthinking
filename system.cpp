@@ -12,7 +12,7 @@ System::System(int particleNumber,double sideLength, double timeStep,double nois
 
     this->simulationBox = Box(sideLength,sideLength,0,0);
 
-  
+    this->particles.resize(this->particleNumber);
 }
 
 void System::updateRule() {
