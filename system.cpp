@@ -1,7 +1,7 @@
 #include <iostream>
 #include "system.h"
 
-System::System(int particleNumber,double sideLength, double timeStep,double noiseStrength) {
+System::System(int particleNumber,double sideLength, double timeStep,double noiseStrength,int seed) {
     
     std::cout<<"I am constructing the System!"<<std::endl;
 
@@ -13,9 +13,16 @@ System::System(int particleNumber,double sideLength, double timeStep,double nois
     this->simulationBox = Box(sideLength,sideLength,0,0);
 
     this->particles.resize(this->particleNumber);
+
+    // initialise random number generator
+    this->gen = std::mt19937(seed);
 }
 
 void System::updateRule() {
     // Implement the logic for updating rules
     std::cout<<"Updating the system..."<<std::endl;
+}
+double System::uniform(double min,double max) {
+    return (max-min)*this->uniformDist(gen)+min;
+
 }
