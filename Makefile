@@ -1,6 +1,6 @@
 CC = g++
 CFLAGS = -O2 -Wall
-SRC = main.cpp system.cpp box.cpp
+SRC = main.cpp system.cpp box.cpp particle.cpp
 EXEC = myvicsek
 
 

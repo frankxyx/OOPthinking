@@ -3,7 +3,7 @@
 
 #include <vector> //to use standard C++ vectors
 #include "box.h" 
-// #include "particle.h" //yet to be created!
+#include "particle.h" 
 
 class System {
     public:
@@ -14,7 +14,7 @@ class System {
         double timeStep;
         
         Box simulationBox;
-        // std::vector<Particle> particles;
+        std::vector<Particle> particles;
 
         void updateRule();
 };
