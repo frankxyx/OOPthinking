@@ -1,1 +1,2 @@
 This is a new line.
+some changes are made for a second time.
